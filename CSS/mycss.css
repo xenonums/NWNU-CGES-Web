@@ -1,0 +1,277 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.header-box1{
+    padding: 10px;
+    background-color: rgb(17,39,105);
+}
+/*logo行修饰*/
+.logo{
+    background-color: rgb(17,39,105);
+}
+.logo .container .col-md-6 .search{
+    padding: 30px;
+    padding-left: 400px;
+}
+.header-box2{
+    padding: 2px;
+    background-color: rgb(17,39,105);
+}
+.search #s{
+    border-radius: 100px;
+}
+.search img{
+    width: 15px; 
+    position: absolute;
+    right: 0px; 
+    top: 35px;
+}
+/*菜单栏修饰*/
+nav{
+    height: 40px;
+}
+.menu{
+    margin: auto;
+    text-align: center;
+}
+nav ul li{                   
+    display: inline-block;
+    width: 90px;
+    padding: 10px;
+    position: relative;                      /*42行，以此元素为基准sub移动*/
+}
+.menu li a{
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+}
+.submenu{
+    display: none;
+}
+.menu li:hover .submenu{
+    display: block;           /*导致其他box变形，要使其浮起来*/
+    position: absolute;               /*浮起*/
+    top: 40px;                     /*sub移动*/
+    left: -14px;
+}
+.submenu{                     /*sub背景色*/
+    background: rgb(17,39,105);
+
+}
+.submenu ul li{             /*sub孙子设定,防止横显*/
+    display: block; 
+    width: 120px;
+    text-align: center;         
+} 
+.submenu ul li a{            /*sub字色*/
+    color: white;
+}
+.line{
+    padding: 1px;
+    background-color: rgb(17,39,105);
+}
+.bigmenu{
+    position: relative;
+    z-index: 10;
+}
+#carousel-example-generic{
+    position: relative;
+    z-index: 1;
+}
+.item img{
+    height: 450px !important;
+    width: 100%;
+}
+/*正文修饰*/
+.more{
+    float: right;
+    margin-bottom: 0px;
+}
+
+.container .litpic #carousel-example-generic1{  
+    max-width: 100%;
+    max-height: 100%;
+    margin-top: 25px !important;
+}
+
+.mid-right-text{
+    height: 355px;
+    width: 496px;
+}
+.mid-right-text dl{height: 60px;
+    width: 440px;
+    margin-top: 10px;
+    border-bottom-style: dashed;
+    border-bottom-color:#cccccc;
+    border-bottom-width:1px;
+}
+
+.mid-right-text dt{
+    float: left;
+    height: 50px;
+    width: 50px;
+    font-family: "Microsoft YaHei";
+    background-color: #fff;
+    box-shadow: 2px 2px 3px rgba(50,50,50,0.4);
+}
+
+.mid-right-text .riqi{
+    width: 50px;
+    height: 33px;
+    background-color: #e8e8e8;
+    font-size: 24px;
+    font-weight:bold;
+    text-align: center;
+    line-height: 33px;
+    color: #555555;
+}
+.mid-right-text .nian{
+    margin: -10px 0 0 0px;
+    width: 50px;
+    height: 17px;
+    background-color: #888888;
+    color: white;
+    text-align: center;
+    line-height: 17px;
+    font-size: 12px;
+}
+.mid-right-text .hd-title a{
+    display: flex;
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+}
+.mid-right-text .hd-elli a{
+    display: flex;
+    text-decoration: none;
+    font-size: 13px;
+    color: #888888;
+}
+.mid-right-text dl dd{
+    margin: 0 0 0 60px;
+}
+
+.mid-right-title,.center-left-title,.center-right-title,.below-left-title,.below-mid-title,.below-mid-title{
+    max-width: 100%;
+    max-height: 100%;
+    border-bottom-style: solid;
+    border-bottom-color:#112769;
+    border-bottom-width:2px;
+}
+.center-left-text li,.center-right-text li,.left-text-2 li,.below-mid-text li{
+    line-height: 45px;
+    height: 45px;
+    padding: 0px;
+    border-bottom: #cccccc dashed 1px;
+    display: flex;
+}
+.center-left-text li a,.center-right-text li a,.left-text-2 li a,.below-mid-text li a{
+    color: #333333;
+    text-decoration: none;
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+.center-left-text li,.center-right-text li,.left-text-2 li,.below-mid-text li{
+    background-image: url("https://dhxy.nwnu.edu.cn/_upload/tpl/00/27/39/template39/images/jiantou.jpg");
+    background-repeat: no-repeat;
+    background-position-y: 14px;
+}
+
+.center-left-text .date,.center-right-text .date{
+    margin: 0 0 0 10px;            
+    text-align: right;
+    flex-grow: 1;
+}
+
+dd .text-title a{
+    text-decoration: none;
+    color: #888888;
+}
+dd .text-elli a{
+    text-decoration: none;
+    color: #cccccc;
+    font-size: 13px;
+}
+
+.left-text-2 ul{
+    position: absolute;
+    top:150px;
+    border-bottom: #cccccc dashed 1px;
+}
+
+.below-left-text img{ 
+    margin-top: 15px;
+    margin-left: 5px;
+}
+.below-left-text dd{ 
+    margin-top: 30px;
+    margin-right: 60px;
+    text-decoration: none;
+    float: right;
+    font-size: 13px;
+}
+.grid div{
+    margin: 4px;
+    text-align: center;
+    padding: 4px 0;
+}
+.grid img{
+    max-width: 100%;
+    max-height: 100%;
+}
+/*小灰条修饰*/
+.picscroll .imgscroll2_img img{
+    margin-left: 3px;
+}
+
+.ibuttom{
+    background-color: rgb(234,234,234);
+    height: 345px;
+}
+.ibuttom img{ 
+    max-width: 100%;
+    max-height: 100%;
+    padding: 20px;
+}
+.litbox{
+    max-width: 100%;
+    max-height: 100%;
+    border:rgb(17,39,105) solid 2px;
+}
+.litbox p{
+    margin-top: 12px;
+    margin-left: 40px;
+    font-size: 18px;
+}
+#dropup1{
+    position: absolute;
+    top:10px;
+    right: 175px
+}
+#dropup2{
+    position: absolute;
+    top:10px;
+    right: 600px
+
+}
+/*footer修饰*/
+.linebox{
+    background-color: rgb(17,39,105);
+}
+.footer{
+    background-color: rgb(17,39,105);
+    height: 75px;
+}
+.copyright{
+    font-size: 12px;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+
+
+
