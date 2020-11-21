@@ -196,10 +196,10 @@ dd .text-elli a{
     font-size: 13px;
 }
 
-.left-text-2 ul{
+.left-text-2{
+    padding-top: 600;
     position: absolute;
     top:150px;
-    border-bottom: #cccccc dashed 1px;
 }
 
 .below-left-text img{ 
